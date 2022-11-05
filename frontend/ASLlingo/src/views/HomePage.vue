@@ -1,137 +1,131 @@
 <template>
   <ion-page>
-    <ion-header :translucent="true">
-      <ion-toolbar>
-        <ion-title>Camera Test</ion-title>
-      </ion-toolbar>
-    </ion-header>
-    
     <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title size="large">Camera Test</ion-title>
-        </ion-toolbar>
-      </ion-header>
-    
-      <div id="container">
-        <ion-button @click="takeVideo" shape="circle">
-          <ion-icon :md="icon.md" :ios="icon.ios"></ion-icon>
-        </ion-button>
-        <br/>
-        <strong>Click the button</strong>
-        <p> You<a target="_blank" rel="noopener noreferrer" href="https://www.google.com/"> Fool</a></p>
-        <p>{{JSON.stringify(videoInfo)}}</p>
+      <div class="box" id="container">
+        <p style="line-height: 0px;color:white;margin: 0;margin-left:2rem; margin-top:3rem; font-size:5rem;">Quiz!</p>
+        <p style="line-height: 0px;color:white;margin: 0;margin-left:3rem; margin-top:4.5rem; font-size:1.5rem;">Master ASL!</p>
+        <p style="line-height: 0px;color:white;margin: 0;margin-left:3rem; margin-top:2rem; font-size:1rem;">Become the winner! Win amazing prizes!</p>
+        <div id="whiteSpace"></div>
+        <div v-for="item in items" :key="item.id" style="">
+        <ion-card @click="openModal(item.id, item.title, item.question, item.difficulty, item.color)" >
+          <ion-card-header>
+            <ion-card-subtitle>{{item.title}}</ion-card-subtitle>
+            <ion-card-title>{{item.question}}</ion-card-title>
+            
+          </ion-card-header>
+          <ion-card-content>
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                  <ion-text :color="item.color">
+                    <p><strong>{{item.difficulty}}</strong></p>
+                  </ion-text>
+                  
+                </ion-col>
+                <ion-col></ion-col>
+                <ion-col class="ion-no-padding">
+                  <ion-thumbnail >
+              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+            </ion-thumbnail >
+                </ion-col>
+
+              </ion-row>
+            </ion-grid>
+            
+          </ion-card-content>
+        </ion-card>
       </div>
+      </div>
+      <!-- create a card with a for loop -->
+      
+
+  
 
     </ion-content>
   </ion-page>
 </template>
 
 <script>
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonIcon } from '@ionic/vue';
-import { defineComponent } from 'vue';
-import { cameraOutline  } from 'ionicons/icons';
-import {MediaCapture} from '@awesome-cordova-plugins/media-capture';
-import {Capacitor} from '@capacitor/core';
-import axios from 'axios';
+  import { IonContent, IonPage, IonCard, IonCardContent, IonCardTitle, IonCardSubtitle, IonThumbnail, modalController} from '@ionic/vue';
+  import Modal from '../components/ModalComponent.vue';
+  import { defineComponent } from 'vue';
+  export default defineComponent({
+    name: 'HomePage',
+    components: {
+      IonContent,
+      IonThumbnail,
+      IonPage,
+      IonCard,
+      IonCardContent,
+      IonCardTitle,
+      IonCardSubtitle
 
-export default defineComponent({
-  name: 'HomePage',
-  components: {
-    IonContent,
-    IonIcon,
-    IonButton,
-    IonHeader,
-    IonPage,
-    IonTitle,
-    IonToolbar
-  },
-  data() {
-    return {
-      videoInfo: {},
-      icon: {
-        md: cameraOutline,
-        ios: cameraOutline
+    },
+    data() {
+      return {
+        items: [
+          {id: 1, title: 'Question 1', difficulty: 'Easy', question: 'What does the fox say? Answer the question ', color: 'success'},
+          {id: 2,title: 'Question 2', difficulty: 'Easy', question: 'What does the fox say? Answer the question ', color: 'success'},
+          {id: 3,title: 'Question 3', difficulty: 'Hard', question: 'What does the fox say? Answer the question ', color: 'danger'},
+          {id: 4,title: 'Question 4', difficulty: 'Medium', question: 'What does the fox say? Answer the question ', color: 'warning'},
+          {id: 5,title: 'Question 5', difficulty: 'Easy', question: 'What does the fox say? Answer the question ', color: 'success'},
+          {id: 6,title: 'Question 6', difficulty: 'Hard', question: 'What does the fox say? Answer the question ', color: 'warning'},
+          {id: 7,title: 'Question 7', difficulty: 'Medium', question: 'What does the fox say? Answer the question ', color: 'warning'},
+          {id: 8,title: 'Question 8', difficulty: 'Hard', question: 'What does the fox say? Answer the question ', color: 'danger'},
+          {id: 9,title: 'Question 9', difficulty: 'Hard', question: 'What does the fox say? Answer the question ', color: 'danger'},
+          {id: 10,title: 'Question 10', difficulty: 'Easy', question: 'What does the fox say? Answer the question ', color: 'success'}
+          
+        ]
+      }
+    },
+    methods: {
+      async openModal(id, title, question, difficulty, color) {
+        const modal = await modalController.create({
+          component: Modal,
+          componentProps: {
+            id : id,
+            title : title,
+            question :  question,
+            difficulty : difficulty,
+            color : color
+          }
+        });
+      modal.present();
+      // const { data, role } = await modal.onWillDismiss();
+      // alert(JSON.stringify(role)) IDEA: use this to get the data back from the modal and display something then
+      // console.log(data)
+      
       }
     }
-  },
-  methods: {
-    
-    takeVideo: async function () {``
-      
-      try {
-        const options = {
-          duration: 10,
-          limit: 1,
-          quality: 1
-        };
-        const result = await MediaCapture.captureVideo(options);
-        this.videoInfo = result[0];
-        // console.log("videoInfo", JSON.stringify(result[0]));
-        const blob = await fetch(
-          Capacitor.convertFileSrc(this.videoInfo.fullPath)
-        ).then(r => r.blob());
-        const formData = new FormData();
-        formData.append("file", blob, this.videoInfo.name);
-        // convert video blob to base64
-        let reader = new FileReader();
-        reader.readAsDataURL(blob);
-        reader.onloadend = async function() {
-          let base64data = reader.result;
-          let trimmed = base64data.substring(base64data.indexOf(",") + 1);
-          console.log(trimmed);
-        axios({
-          method: "post",
-          url: "https://8690-2620-101-c040-85c-d547-3027-b598-c03a.ngrok.io/upload/",
-          data: JSON.stringify({
-            _data: trimmed
-          }),
-        headers: {
-          "Content-Type": "application/json"
-        }
-        }).then((response) => {
-          alert(response.status);
-        });
-        };
-      } catch (error) {
-        alert(error);
-    }
-  }
-}
-});
+  })
 </script>
 
 <style scoped>
-#container {
-  text-align: center;
+ion-content{ 
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 900;
   
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
 }
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+#whiteSpace{
+  height: 5rem;
 }
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-  
-  color: #8c8c8c;
-  
-  margin: 0;
+.box {
+  width:100vw;
+  height:40rem;
+  display:inline-block;
+  padding-top:10px;
+  background:radial-gradient(100% 35% at top,#ff7454 99%,transparent 100%);
 }
-
-#container a {
-  text-decoration: none;
+ion-thumbnail {
+  --size: 50px;
+  --border-radius: 14px;
 }
-ion-button [shape=circle] {
-  border-radius: 100% !important;
-  width: 56px;
-  height: 56px;
-}
+ion-card{
+  margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    width: 90% !important;
+    border-radius: 10px;
+    background: #f8f4f4;
+  }
 </style>
