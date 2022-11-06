@@ -1,6 +1,7 @@
 import time
 
 from django.core.files.storage import default_storage
+from django.forms import model_to_dict
 from rest_framework import generics
 from rest_framework.decorators import api_view, renderer_classes
 from rest_framework.renderers import TemplateHTMLRenderer, JSONRenderer
@@ -9,9 +10,8 @@ from rest_framework.views import APIView
 from rest_framework.viewsets import ViewSet
 from django.views.decorators.csrf import csrf_exempt
 
-
 from .serializers import UploadSerializer, BlobSerializer
-from .models import VideoCapture
+from .models import VideoCapture, ASLOptions, ASLQuestions
 import base64
 
 ML_RESPONSE = [
@@ -63,7 +63,41 @@ class VideoCaptureHandler(APIView):
         mode = TaskManager()
         mode.detectSign()
         return Response(RESPONSE)
-        # return Response("Video Upload Error!")
+
+
+class ASLQuestionView(APIView):
+
+    def get(self, request, format=None):
+        # ASLOptions.objects.create(
+        #     option_text="CL-3",
+        #     link="https://ionicframework.com/docs/img/demos/card-media.png"
+        # )
+        # ASLQuestions.objects.create(
+        #     difficulty='Easy',
+        #     question='What does the fox say? Answer the question ',
+        #     color='success',
+        #     option1=1,
+        #     option2=1,
+        #     option3=1,
+        #     option4=1,
+        #     correct_option=1
+        # )
+        questions = ASLQuestions.objects.all()
+        results = []
+        for question in questions:
+            question = model_to_dict(question)
+            option1 = model_to_dict(ASLOptions.objects.get(option_id=question.pop("option1")))
+            option2 = model_to_dict(ASLOptions.objects.get(option_id=question.pop("option2")))
+            option3 = model_to_dict(ASLOptions.objects.get(option_id=question.pop("option3")))
+            option4 = model_to_dict(ASLOptions.objects.get(option_id=question.pop("option4")))
+            optionset1 = [option1, option2]
+            optionset2 = [option3, option4]
+            question["optionset1"] = optionset1
+            question["optionset2"] = optionset2
+            print(question)
+            results.append(question)
+        return Response({"questions":results})
+
 
 #
 # class VideoCaptureViewSet(generics.ListCreateAPIView):
