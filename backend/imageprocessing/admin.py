@@ -1,3 +1,6 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import ASLQuestions, ASLOptions
+
+admin.site.register(ASLQuestions)
+admin.site.register(ASLOptions)

@@ -13,9 +13,8 @@ import tensorflow as tf
 import mediapipe as mp
 
 dir_path = os.getcwd()
-VIDEO_DIR = os.path.join(dir_path,"video.mp4")
-dir_path = os.path.join(dir_path, "imageprocessing/")
-
+VIDEO_DIR = os.path.join(dir_path, "video.mp4")
+dir_path = os.path.join(dir_path, "imageprocessing")
 
 ANSWER = "CL-L"
 
@@ -34,6 +33,8 @@ SIGN_IDS = {
     9: "CL-CIT"
 }
 PHOTO_DIR_NAME = "test"
+
+
 # from utils import CvFpsCalc
 # from model import KeyPointClassifier
 # from model import PointHistoryClassifier
@@ -62,7 +63,7 @@ PHOTO_DIR_NAME = "test"
 
 
 def classifyVideo():
-    global VIDEO_DIR, SIGNS_SEEN,SIGN_IDS, ANSWER
+    global VIDEO_DIR, SIGNS_SEEN, SIGN_IDS, ANSWER
 
     # Delete contents of folder "test" ################################################
     # test_dir = "./{}".format(PHOTO_DIR_NAME)
@@ -73,7 +74,7 @@ def classifyVideo():
 
     cap_device = 0
     cap_width = 960
-    cap_height = 540
+    cap_height =  540
 
     use_static_image_mode = False
     min_detection_confidence = 0.7
@@ -101,14 +102,14 @@ def classifyVideo():
     point_history_classifier = PointHistoryClassifier()
 
     # Read labels ###########################################################
-    with open(dir_path + 'model/keypoint_classifier/keypoint_classifier_label.csv',
+    with open(os.path.join(dir_path, 'model/keypoint_classifier/keypoint_classifier_label.csv'),
               encoding='utf-8-sig') as f:
         keypoint_classifier_labels = csv.reader(f)
         keypoint_classifier_labels = [
             row[0] for row in keypoint_classifier_labels
         ]
     with open(
-            dir_path + 'model/point_history_classifier/point_history_classifier_label.csv',
+            os.path.join(dir_path, 'model/point_history_classifier/point_history_classifier_label.csv'),
             encoding='utf-8-sig') as f:
         point_history_classifier_labels = csv.reader(f)
         point_history_classifier_labels = [
@@ -140,10 +141,15 @@ def classifyVideo():
 
         # Camera capture #####################################################
         ret, image = cap.read()
-        print(VIDEO_DIR)
+
+
         if not ret:
             break
-        image = cv.flip(image, 1)  # Mirror display
+
+        image = cv.rotate(image, cv.ROTATE_180)
+        image = cv.flip(image, 1)
+        image = cv.resize(image, (500, 750))
+        # image = cv.flip(image, 1)  # Mirror display
         debug_image = copy.deepcopy(image)
 
         # Detection implementation #############################################################
@@ -176,17 +182,18 @@ def classifyVideo():
                     pre_processed_landmark_list)
                 # print(hand_sign_id)
                 # print(pre_processed_landmark_list)
-                # print("HandsignID: ", hand_sign_id)
+                print("HandsignID: ", hand_sign_id)
+                test_dir = os.path.join(dir_path, "test")
                 if hand_sign_id not in dict_max.keys():
                     dict_max[hand_sign_id] = {
-                        "File": os.path.join(dir_path, "test", str(current) + ".jpg"), "Accuracy": acc * 100}
-                    name = os.path.join('test', str(current) + '.jpg')
+                        "File":  str(current) + ".jpg", "Accuracy": acc * 100}
+                    name = os.path.join(dir_path, str(current) + '.jpg')
                     cv.imwrite(name, image)
                 elif acc * 100 > dict_max[hand_sign_id]["Accuracy"]:
-                    os.remove(dict_max[hand_sign_id]["File"])
+                    os.remove(os.path.join(dir_path, dict_max[hand_sign_id]["File"]))
                     dict_max[hand_sign_id] = {
-                        "File": os.path.join(dir_path, "test", str(current) + ".jpg"), "Accuracy": acc * 100}
-                    name = os.path.join('test', str(current) + '.jpg')
+                        "File": str(current) + ".jpg", "Accuracy": acc * 100}
+                    name = os.path.join(dir_path, str(current) + '.jpg')
                     cv.imwrite(name, image)
 
                 # print(acc*100, '%')
@@ -237,6 +244,8 @@ def classifyVideo():
     # print(SIGN_IDS[max(SIGNS_SEEN, key=SIGNS_SEEN.count)])
     # print(dict_max)
     print(SIGNS_SEEN)
+    dict_max[max(SIGNS_SEEN, key=SIGNS_SEEN.count)]["File"] = os.path.join(test_dir, dict_max[
+        max(SIGNS_SEEN, key=SIGNS_SEEN.count)]["File"])
     dict_max[max(SIGNS_SEEN, key=SIGNS_SEEN.count)]["Sign ID"] = SIGN_IDS[max(SIGNS_SEEN, key=SIGNS_SEEN.count)]
     return dict_max[max(SIGNS_SEEN, key=SIGNS_SEEN.count)]
 
@@ -342,12 +351,12 @@ def logging_csv(number, mode, landmark_list, point_history_list):
     if mode == 0:
         pass
     if mode == 1 and (0 <= number <= 9):
-        csv_path = 'model/keypoint_classifier/keypoint.csv'
+        csv_path = os.path.join(dir_path, 'model/keypoint_classifier/keypoint.csv')
         with open(csv_path, 'a', newline="") as f:
             writer = csv.writer(f)
             writer.writerow([number, *landmark_list])
     if mode == 2 and (0 <= number <= 9):
-        csv_path = 'model/point_history_classifier/point_history.csv'
+        csv_path = os.path.join(dir_path, 'model/point_history_classifier/point_history.csv')
         with open(csv_path, 'a', newline="") as f:
             writer = csv.writer(f)
             writer.writerow([number, *point_history_list])
@@ -621,7 +630,7 @@ class CvFpsCalc(object):
 class KeyPointClassifier(object):
     def __init__(
             self,
-            model_path=dir_path + "model\keypoint_classifier\keypoint_classifier.tflite",
+            model_path=os.path.join(dir_path, "model\keypoint_classifier\keypoint_classifier.tflite"),
             num_threads=1,
     ):
         self.interpreter = tf.lite.Interpreter(model_path=model_path,
@@ -658,7 +667,7 @@ class KeyPointClassifier(object):
 class PointHistoryClassifier(object):
     def __init__(
             self,
-            model_path=dir_path + "model\point_history_classifier\point_history_classifier.tflite",
+            model_path=os.path.join(dir_path, "model\point_history_classifier\point_history_classifier.tflite"),
             score_th=0.5,
             invalid_value=0,
             num_threads=1,
