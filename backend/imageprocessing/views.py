@@ -1,4 +1,5 @@
 import time
+from . import machine_learning
 
 from django.core.files.storage import default_storage
 from django.forms import model_to_dict
@@ -41,8 +42,8 @@ class TaskManager:
     def detectSign(self):
         global RESPONSE, ML_RESPONSE
         # TODO machine learning call goes here. store to variable ML_RESPONSE
-        # ML_RESPONSE = function_name()
-        time.sleep(10)
+        ML_RESPONSE = machine_learning.classifyVideo()
+        # time.sleep(10)
         self.response["Content"] = ML_RESPONSE
         self.response["Completed"] = 1
         RESPONSE = self.response
@@ -86,17 +87,21 @@ class ASLQuestionView(APIView):
         results = []
         for question in questions:
             question = model_to_dict(question)
-            option1 = model_to_dict(ASLOptions.objects.get(option_id=question.pop("option1")))
-            option2 = model_to_dict(ASLOptions.objects.get(option_id=question.pop("option2")))
-            option3 = model_to_dict(ASLOptions.objects.get(option_id=question.pop("option3")))
-            option4 = model_to_dict(ASLOptions.objects.get(option_id=question.pop("option4")))
+            option1 = model_to_dict(ASLOptions.objects.get(
+                option_id=question.pop("option1")))
+            option2 = model_to_dict(ASLOptions.objects.get(
+                option_id=question.pop("option2")))
+            option3 = model_to_dict(ASLOptions.objects.get(
+                option_id=question.pop("option3")))
+            option4 = model_to_dict(ASLOptions.objects.get(
+                option_id=question.pop("option4")))
             optionset1 = [option1, option2]
             optionset2 = [option3, option4]
             question["optionset1"] = optionset1
             question["optionset2"] = optionset2
             print(question)
             results.append(question)
-        return Response({"questions":results})
+        return Response({"questions": results})
 
 
 #
