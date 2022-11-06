@@ -7,12 +7,33 @@ import os
 import itertools
 from collections import Counter
 from collections import deque
-from backend.settings import BASE_DIR
 import cv2 as cv
 import numpy as np
 import tensorflow as tf
 import mediapipe as mp
 
+dir_path = os.getcwd()
+VIDEO_DIR = os.path.join(dir_path,"video.mp4")
+dir_path = os.path.join(dir_path, "imageprocessing/")
+
+
+ANSWER = "CL-L"
+
+# Data
+SIGNS_SEEN = []
+SIGN_IDS = {
+    0: "CL-ILY",
+    1: "CL-1",
+    2: "CL-3",
+    3: "CL-3C",
+    4: "CL-4",
+    5: "CL-5",
+    6: "CL-5C",
+    7: "CL-A",
+    8: "CL-BB",
+    9: "CL-CIT"
+}
+PHOTO_DIR_NAME = "test"
 # from utils import CvFpsCalc
 # from model import KeyPointClassifier
 # from model import PointHistoryClassifier
@@ -41,25 +62,7 @@ import mediapipe as mp
 
 
 def classifyVideo():
-    # INPUT --------------------
-    VIDEO_DIR = "video.mp4"
-    ANSWER = "CL-L"
-
-    # Data
-    SIGNS_SEEN = []
-    SIGN_IDS = {
-        0: "CL-ILY",
-        1: "CL-1",
-        2: "CL-3",
-        3: "CL-3C",
-        4: "CL-4",
-        5: "CL-5",
-        6: "CL-5C",
-        7: "CL-A",
-        8: "CL-BB",
-        9: "CL-CIT"
-    }
-    PHOTO_DIR_NAME = "test"
+    global VIDEO_DIR, SIGNS_SEEN,SIGN_IDS, ANSWER
 
     # Delete contents of folder "test" ################################################
     # test_dir = "./{}".format(PHOTO_DIR_NAME)
@@ -98,14 +101,14 @@ def classifyVideo():
     point_history_classifier = PointHistoryClassifier()
 
     # Read labels ###########################################################
-    with open('model/keypoint_classifier/keypoint_classifier_label.csv',
+    with open(dir_path + 'model/keypoint_classifier/keypoint_classifier_label.csv',
               encoding='utf-8-sig') as f:
         keypoint_classifier_labels = csv.reader(f)
         keypoint_classifier_labels = [
             row[0] for row in keypoint_classifier_labels
         ]
     with open(
-            'model/point_history_classifier/point_history_classifier_label.csv',
+            dir_path + 'model/point_history_classifier/point_history_classifier_label.csv',
             encoding='utf-8-sig') as f:
         point_history_classifier_labels = csv.reader(f)
         point_history_classifier_labels = [
@@ -137,7 +140,7 @@ def classifyVideo():
 
         # Camera capture #####################################################
         ret, image = cap.read()
-
+        print(VIDEO_DIR)
         if not ret:
             break
         image = cv.flip(image, 1)  # Mirror display
@@ -176,14 +179,14 @@ def classifyVideo():
                 # print("HandsignID: ", hand_sign_id)
                 if hand_sign_id not in dict_max.keys():
                     dict_max[hand_sign_id] = {
-                        "File": "./test/" + str(current) + ".jpg", "Accuracy": acc * 100}
-                    name = './test/' + str(current) + '.jpg'
+                        "File": os.path.join(dir_path, "test", str(current) + ".jpg"), "Accuracy": acc * 100}
+                    name = os.path.join('test', str(current) + '.jpg')
                     cv.imwrite(name, image)
-                elif acc*100 > dict_max[hand_sign_id]["Accuracy"]:
+                elif acc * 100 > dict_max[hand_sign_id]["Accuracy"]:
                     os.remove(dict_max[hand_sign_id]["File"])
                     dict_max[hand_sign_id] = {
-                        "File": "./test/" + str(current) + ".jpg", "Accuracy": acc * 100}
-                    name = './test/' + str(current) + '.jpg'
+                        "File": os.path.join(dir_path, "test", str(current) + ".jpg"), "Accuracy": acc * 100}
+                    name = os.path.join('test', str(current) + '.jpg')
                     cv.imwrite(name, image)
 
                 # print(acc*100, '%')
@@ -233,9 +236,9 @@ def classifyVideo():
     print("-------------- OUTPUT --------------")
     # print(SIGN_IDS[max(SIGNS_SEEN, key=SIGNS_SEEN.count)])
     # print(dict_max)
-    dict_max[max(SIGNS_SEEN, key=SIGNS_SEEN.count)
-             ]["Sign ID"] = SIGN_IDS[max(SIGNS_SEEN, key=SIGNS_SEEN.count)]
-    return(dict_max[max(SIGNS_SEEN, key=SIGNS_SEEN.count)])
+    print(SIGNS_SEEN)
+    dict_max[max(SIGNS_SEEN, key=SIGNS_SEEN.count)]["Sign ID"] = SIGN_IDS[max(SIGNS_SEEN, key=SIGNS_SEEN.count)]
+    return dict_max[max(SIGNS_SEEN, key=SIGNS_SEEN.count)]
 
 
 def select_mode(key, mode):
@@ -617,9 +620,9 @@ class CvFpsCalc(object):
 
 class KeyPointClassifier(object):
     def __init__(
-        self,
-        model_path=BASE_DIR+'/'+'model/keypoint_classifier/keypoint_classifier.tflite'
-        num_threads=1,
+            self,
+            model_path=dir_path + "model\keypoint_classifier\keypoint_classifier.tflite",
+            num_threads=1,
     ):
         self.interpreter = tf.lite.Interpreter(model_path=model_path,
                                                num_threads=num_threads)
@@ -629,8 +632,8 @@ class KeyPointClassifier(object):
         self.output_details = self.interpreter.get_output_details()
 
     def __call__(
-        self,
-        landmark_list,
+            self,
+            landmark_list,
     ):
         input_details_tensor_index = self.input_details[0]['index']
         self.interpreter.set_tensor(
@@ -638,7 +641,7 @@ class KeyPointClassifier(object):
             np.array([landmark_list], dtype=np.float32))
         self.interpreter.invoke()
 
-        #print(self.interpreter.evaluate(np.array([landmark_list], dtype=np.float32)))
+        # print(self.interpreter.evaluate(np.array([landmark_list], dtype=np.float32)))
 
         output_details_tensor_index = self.output_details[0]['index']
 
@@ -654,11 +657,11 @@ class KeyPointClassifier(object):
 
 class PointHistoryClassifier(object):
     def __init__(
-        self,
-        model_path='model/point_history_classifier/point_history_classifier.tflite',
-        score_th=0.5,
-        invalid_value=0,
-        num_threads=1,
+            self,
+            model_path=dir_path + "model\point_history_classifier\point_history_classifier.tflite",
+            score_th=0.5,
+            invalid_value=0,
+            num_threads=1,
     ):
         self.interpreter = tf.lite.Interpreter(model_path=model_path,
                                                num_threads=num_threads)
@@ -671,8 +674,8 @@ class PointHistoryClassifier(object):
         self.invalid_value = invalid_value
 
     def __call__(
-        self,
-        point_history,
+            self,
+            point_history,
     ):
         input_details_tensor_index = self.input_details[0]['index']
         self.interpreter.set_tensor(
