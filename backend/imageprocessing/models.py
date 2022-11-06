@@ -1,21 +1,21 @@
 from django.db import models
 import base64
 
-
+#
 # class ASLQuestions(models.Model):
-#     OPTION_CHOICES = (('option1', 'option1'), ('option2', 'option2'))
+#
 #     qkey = models.BigAutoField(primary_key=True)
 #     question = models.TextField()
 #     option1 = models.IntegerField()
 #     option2 = models.IntegerField()
 #     correct_option = models.TextField(choices=OPTION_CHOICES)
 #
-#
+
 # class ASLOptions(models.Model):
 #     option_id = models.BigAutoField(primary_key=True)
 #     option_text = models.TextField()
-#     sign_id = models.IntegerField(default=None)
-
+#    sign_id = models.IntegerField(default=None)
+#
 class VideoCapture(models.Model):
     video_id = models.BigAutoField(primary_key=True)
 
