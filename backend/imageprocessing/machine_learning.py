@@ -180,13 +180,13 @@ def classifyVideo():
                 if hand_sign_id not in dict_max.keys():
                     dict_max[hand_sign_id] = {
                         "File": os.path.join(dir_path, "test", str(current) + ".jpg"), "Accuracy": acc * 100}
-                    name = dir_path +'test/' + str(current) + '.jpg'
+                    name = os.path.join('test', str(current) + '.jpg')
                     cv.imwrite(name, image)
                 elif acc * 100 > dict_max[hand_sign_id]["Accuracy"]:
                     os.remove(dict_max[hand_sign_id]["File"])
                     dict_max[hand_sign_id] = {
                         "File": os.path.join(dir_path, "test", str(current) + ".jpg"), "Accuracy": acc * 100}
-                    name = dir_path + 'test/' + str(current) + '.jpg'
+                    name = os.path.join('test', str(current) + '.jpg')
                     cv.imwrite(name, image)
 
                 # print(acc*100, '%')
