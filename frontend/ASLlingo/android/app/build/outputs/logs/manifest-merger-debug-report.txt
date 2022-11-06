@@ -1,0 +1,268 @@
+-- Merging decision tree log ---
+provider#androidx.core.content.FileProvider
+INJECTED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:10:9-12:20
+	android:grantUriPermissions
+		ADDED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:10:96-130
+	android:authorities
+		INJECTED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:10:19-70
+	android:exported
+		ADDED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:10:71-95
+	android:name
+		ADDED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:10:131-180
+manifest
+ADDED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:2:1-15:12
+INJECTED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:2:1-15:12
+INJECTED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:2:1-15:12
+INJECTED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:2:1-15:12
+MERGED from [:capacitor-app] C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\node_modules\@capacitor\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:capacitor-haptics] C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\node_modules\@capacitor\haptics\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:capacitor-keyboard] C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\node_modules\@capacitor\keyboard\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:capacitor-status-bar] C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\node_modules\@capacitor\status-bar\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:capacitor-android] C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\node_modules\@capacitor\android\capacitor\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:capacitor-cordova-android-plugins] C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
+MERGED from [androidx.appcompat:appcompat:1.4.2] C:\Users\akars\.gradle\caches\transforms-3\a8e52a507448d4b845688b4ff42bab35\transformed\appcompat-1.4.2\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.2.0] C:\Users\akars\.gradle\caches\transforms-3\96bfe7ff07b49e78a3a68f6b88db966e\transformed\coordinatorlayout-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-splashscreen:1.0.0-rc01] C:\Users\akars\.gradle\caches\transforms-3\86f2c94e123f7d631ee33b23bd175149\transformed\jetified-core-splashscreen-1.0.0-rc01\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.webkit:webkit:1.4.0] C:\Users\akars\.gradle\caches\transforms-3\139cde389f70573f5dd6bac85edc6cf5\transformed\webkit-1.4.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\d4488bf82a46967f585a72807db195de\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat-resources:1.4.2] C:\Users\akars\.gradle\caches\transforms-3\41d6025b73a5b19c933572877ed2e11c\transformed\jetified-appcompat-resources-1.4.2\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\fb5f1a396d63e2855da3803514443261\transformed\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.4.1] C:\Users\akars\.gradle\caches\transforms-3\5a219d3c068ea5506e18d296bb64f392\transformed\fragment-1.4.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.4.0] C:\Users\akars\.gradle\caches\transforms-3\e71ceb52ca75293c5a48d5623b54fa45\transformed\jetified-activity-1.4.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\akars\.gradle\caches\transforms-3\4b4e9ed46d1ee3454b142d39e515f7b5\transformed\jetified-lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\akars\.gradle\caches\transforms-3\274cb68ed4def82466c61bde728c0c76\transformed\jetified-savedstate-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\513c0c0696e5d489aa246e9add669fdb\transformed\jetified-emoji2-views-helper-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\8876b0ef355d9d3e8b47dae2b38cca4c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\473ac422c13cd8be0cc878694deba9aa\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\akars\.gradle\caches\transforms-3\fc928c6024f0f10289319ffe6c0278c6\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\1889a0a7d87c90f742417215e8893f4a\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\63c31b97c7616c83e49d7e28b134858c\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\akars\.gradle\caches\transforms-3\81ebd2df0bf5584015a596d312d014e4\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\akars\.gradle\caches\transforms-3\181c8e2854958a0e385d1224d4e95c79\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.2.0] C:\Users\akars\.gradle\caches\transforms-3\fed4ea645431ebe73bea2b6204125410\transformed\jetified-core-ktx-1.2.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.core:core:1.8.0] C:\Users\akars\.gradle\caches\transforms-3\fe0dba67bfac75aa58e7b93d33808165\transformed\core-1.8.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\akars\.gradle\caches\transforms-3\aae2458e117fc8cf46c6c0e0eba25151\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\akars\.gradle\caches\transforms-3\31fc96d9881c54f9b47ddec530ec8052\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\13d80db27eeb1b7f8279ad504eac1b76\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\84aae55f1c520831743cec7b2a201f4a\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\a9de27767a213361c9a6f3005faad1ea\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] C:\Users\akars\.gradle\caches\transforms-3\554cf3858fbb3969faf2d3de6eaeebce\transformed\lifecycle-runtime-2.4.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\akars\.gradle\caches\transforms-3\b77b3d4c4b66880b38770930d4dc8f45\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\akars\.gradle\caches\transforms-3\ac9d1a94e0dfd8e366df39019159aeb6\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\akars\.gradle\caches\transforms-3\50164032edb9f678c1f5e79c6c6889d6\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [org.apache.cordova:framework:10.1.1] C:\Users\akars\.gradle\caches\transforms-3\b294c7b79e70a99f26ef48fae3bee632\transformed\jetified-framework-10.1.1\AndroidManifest.xml:20:1-27:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\akars\.gradle\caches\transforms-3\b2ffb75c7ede1f78772b204cf32e7af2\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
+INJECTED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:2:1-15:12
+INJECTED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:2:1-15:12
+INJECTED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:2:1-15:12
+	package
+		ADDED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:2:11-37
+		INJECTED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:2:1-15:12
+		INJECTED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:2:1-15:12
+		INJECTED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:2:38-96
+application
+ADDED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:3:5-13:19
+MERGED from [:capacitor-cordova-android-plugins] C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:5-15:19
+MERGED from [:capacitor-cordova-android-plugins] C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:5-15:19
+MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\8876b0ef355d9d3e8b47dae2b38cca4c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\8876b0ef355d9d3e8b47dae2b38cca4c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.core:core:1.8.0] C:\Users\akars\.gradle\caches\transforms-3\fe0dba67bfac75aa58e7b93d33808165\transformed\core-1.8.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.8.0] C:\Users\akars\.gradle\caches\transforms-3\fe0dba67bfac75aa58e7b93d33808165\transformed\core-1.8.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\akars\.gradle\caches\transforms-3\aae2458e117fc8cf46c6c0e0eba25151\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\akars\.gradle\caches\transforms-3\aae2458e117fc8cf46c6c0e0eba25151\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\akars\.gradle\caches\transforms-3\31fc96d9881c54f9b47ddec530ec8052\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\akars\.gradle\caches\transforms-3\31fc96d9881c54f9b47ddec530ec8052\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\13d80db27eeb1b7f8279ad504eac1b76\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\13d80db27eeb1b7f8279ad504eac1b76\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:25:5-31:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.8.0] C:\Users\akars\.gradle\caches\transforms-3\fe0dba67bfac75aa58e7b93d33808165\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:3:159-185
+	android:label
+		ADDED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:3:80-112
+	android:roundIcon
+		ADDED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:3:113-158
+	android:icon
+		ADDED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:3:45-79
+	android:allowBackup
+		ADDED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:3:18-44
+	android:theme
+		ADDED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:3:186-217
+	android:usesCleartextTraffic
+		ADDED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:3:218-253
+activity#io.ionic.starter.MainActivity
+ADDED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:4:9-9:20
+	android:label
+		ADDED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:4:160-203
+	android:launchMode
+		ADDED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:4:204-235
+	android:exported
+		ADDED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:4:136-159
+	android:configChanges
+		ADDED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:4:19-135
+	android:theme
+		ADDED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:4:281-330
+	android:name
+		ADDED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:4:236-280
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:5:13-8:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:6:17-69
+	android:name
+		ADDED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:6:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:7:17-77
+	android:name
+		ADDED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:7:27-74
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:14:5-67
+	android:name
+		ADDED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:14:22-64
+uses-sdk
+INJECTED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml
+MERGED from [:capacitor-app] C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\node_modules\@capacitor\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:capacitor-app] C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\node_modules\@capacitor\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:capacitor-haptics] C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\node_modules\@capacitor\haptics\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:capacitor-haptics] C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\node_modules\@capacitor\haptics\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:capacitor-keyboard] C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\node_modules\@capacitor\keyboard\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:capacitor-keyboard] C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\node_modules\@capacitor\keyboard\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:capacitor-status-bar] C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\node_modules\@capacitor\status-bar\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:capacitor-status-bar] C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\node_modules\@capacitor\status-bar\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:capacitor-android] C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\node_modules\@capacitor\android\capacitor\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:capacitor-android] C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\node_modules\@capacitor\android\capacitor\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:capacitor-cordova-android-plugins] C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:6:5-8:41
+MERGED from [:capacitor-cordova-android-plugins] C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.appcompat:appcompat:1.4.2] C:\Users\akars\.gradle\caches\transforms-3\a8e52a507448d4b845688b4ff42bab35\transformed\appcompat-1.4.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.4.2] C:\Users\akars\.gradle\caches\transforms-3\a8e52a507448d4b845688b4ff42bab35\transformed\appcompat-1.4.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.2.0] C:\Users\akars\.gradle\caches\transforms-3\96bfe7ff07b49e78a3a68f6b88db966e\transformed\coordinatorlayout-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.2.0] C:\Users\akars\.gradle\caches\transforms-3\96bfe7ff07b49e78a3a68f6b88db966e\transformed\coordinatorlayout-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-splashscreen:1.0.0-rc01] C:\Users\akars\.gradle\caches\transforms-3\86f2c94e123f7d631ee33b23bd175149\transformed\jetified-core-splashscreen-1.0.0-rc01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-splashscreen:1.0.0-rc01] C:\Users\akars\.gradle\caches\transforms-3\86f2c94e123f7d631ee33b23bd175149\transformed\jetified-core-splashscreen-1.0.0-rc01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.webkit:webkit:1.4.0] C:\Users\akars\.gradle\caches\transforms-3\139cde389f70573f5dd6bac85edc6cf5\transformed\webkit-1.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.webkit:webkit:1.4.0] C:\Users\akars\.gradle\caches\transforms-3\139cde389f70573f5dd6bac85edc6cf5\transformed\webkit-1.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\d4488bf82a46967f585a72807db195de\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\d4488bf82a46967f585a72807db195de\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.4.2] C:\Users\akars\.gradle\caches\transforms-3\41d6025b73a5b19c933572877ed2e11c\transformed\jetified-appcompat-resources-1.4.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.4.2] C:\Users\akars\.gradle\caches\transforms-3\41d6025b73a5b19c933572877ed2e11c\transformed\jetified-appcompat-resources-1.4.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\fb5f1a396d63e2855da3803514443261\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\fb5f1a396d63e2855da3803514443261\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.4.1] C:\Users\akars\.gradle\caches\transforms-3\5a219d3c068ea5506e18d296bb64f392\transformed\fragment-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.4.1] C:\Users\akars\.gradle\caches\transforms-3\5a219d3c068ea5506e18d296bb64f392\transformed\fragment-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.4.0] C:\Users\akars\.gradle\caches\transforms-3\e71ceb52ca75293c5a48d5623b54fa45\transformed\jetified-activity-1.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.4.0] C:\Users\akars\.gradle\caches\transforms-3\e71ceb52ca75293c5a48d5623b54fa45\transformed\jetified-activity-1.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\akars\.gradle\caches\transforms-3\4b4e9ed46d1ee3454b142d39e515f7b5\transformed\jetified-lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\akars\.gradle\caches\transforms-3\4b4e9ed46d1ee3454b142d39e515f7b5\transformed\jetified-lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\akars\.gradle\caches\transforms-3\274cb68ed4def82466c61bde728c0c76\transformed\jetified-savedstate-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\akars\.gradle\caches\transforms-3\274cb68ed4def82466c61bde728c0c76\transformed\jetified-savedstate-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\513c0c0696e5d489aa246e9add669fdb\transformed\jetified-emoji2-views-helper-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\513c0c0696e5d489aa246e9add669fdb\transformed\jetified-emoji2-views-helper-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\8876b0ef355d9d3e8b47dae2b38cca4c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\8876b0ef355d9d3e8b47dae2b38cca4c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\473ac422c13cd8be0cc878694deba9aa\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\473ac422c13cd8be0cc878694deba9aa\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\akars\.gradle\caches\transforms-3\fc928c6024f0f10289319ffe6c0278c6\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\akars\.gradle\caches\transforms-3\fc928c6024f0f10289319ffe6c0278c6\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\1889a0a7d87c90f742417215e8893f4a\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\1889a0a7d87c90f742417215e8893f4a\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\63c31b97c7616c83e49d7e28b134858c\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\63c31b97c7616c83e49d7e28b134858c\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\akars\.gradle\caches\transforms-3\81ebd2df0bf5584015a596d312d014e4\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\akars\.gradle\caches\transforms-3\81ebd2df0bf5584015a596d312d014e4\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\akars\.gradle\caches\transforms-3\181c8e2854958a0e385d1224d4e95c79\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\akars\.gradle\caches\transforms-3\181c8e2854958a0e385d1224d4e95c79\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.2.0] C:\Users\akars\.gradle\caches\transforms-3\fed4ea645431ebe73bea2b6204125410\transformed\jetified-core-ktx-1.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.2.0] C:\Users\akars\.gradle\caches\transforms-3\fed4ea645431ebe73bea2b6204125410\transformed\jetified-core-ktx-1.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core:1.8.0] C:\Users\akars\.gradle\caches\transforms-3\fe0dba67bfac75aa58e7b93d33808165\transformed\core-1.8.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.8.0] C:\Users\akars\.gradle\caches\transforms-3\fe0dba67bfac75aa58e7b93d33808165\transformed\core-1.8.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\akars\.gradle\caches\transforms-3\aae2458e117fc8cf46c6c0e0eba25151\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\akars\.gradle\caches\transforms-3\aae2458e117fc8cf46c6c0e0eba25151\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\akars\.gradle\caches\transforms-3\31fc96d9881c54f9b47ddec530ec8052\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\akars\.gradle\caches\transforms-3\31fc96d9881c54f9b47ddec530ec8052\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\13d80db27eeb1b7f8279ad504eac1b76\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\13d80db27eeb1b7f8279ad504eac1b76\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\84aae55f1c520831743cec7b2a201f4a\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\84aae55f1c520831743cec7b2a201f4a\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\a9de27767a213361c9a6f3005faad1ea\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\a9de27767a213361c9a6f3005faad1ea\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] C:\Users\akars\.gradle\caches\transforms-3\554cf3858fbb3969faf2d3de6eaeebce\transformed\lifecycle-runtime-2.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] C:\Users\akars\.gradle\caches\transforms-3\554cf3858fbb3969faf2d3de6eaeebce\transformed\lifecycle-runtime-2.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\akars\.gradle\caches\transforms-3\b77b3d4c4b66880b38770930d4dc8f45\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\akars\.gradle\caches\transforms-3\b77b3d4c4b66880b38770930d4dc8f45\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\akars\.gradle\caches\transforms-3\ac9d1a94e0dfd8e366df39019159aeb6\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\akars\.gradle\caches\transforms-3\ac9d1a94e0dfd8e366df39019159aeb6\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\akars\.gradle\caches\transforms-3\50164032edb9f678c1f5e79c6c6889d6\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\akars\.gradle\caches\transforms-3\50164032edb9f678c1f5e79c6c6889d6\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [org.apache.cordova:framework:10.1.1] C:\Users\akars\.gradle\caches\transforms-3\b294c7b79e70a99f26ef48fae3bee632\transformed\jetified-framework-10.1.1\AndroidManifest.xml:25:5-44
+MERGED from [org.apache.cordova:framework:10.1.1] C:\Users\akars\.gradle\caches\transforms-3\b294c7b79e70a99f26ef48fae3bee632\transformed\jetified-framework-10.1.1\AndroidManifest.xml:25:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\akars\.gradle\caches\transforms-3\b2ffb75c7ede1f78772b204cf32e7af2\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\akars\.gradle\caches\transforms-3\b2ffb75c7ede1f78772b204cf32e7af2\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+INJECTED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:11:13-112
+	android:resource
+		ADDED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:11:75-109
+	android:name
+		ADDED from C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:11:24-74
+uses-permission#android.permission.VIBRATE
+ADDED from [:capacitor-haptics] C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\node_modules\@capacitor\haptics\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-66
+	android:name
+		ADDED from [:capacitor-haptics] C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\node_modules\@capacitor\haptics\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-63
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from [:capacitor-cordova-android-plugins] C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-78
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from [:capacitor-cordova-android-plugins] C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-71
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-68
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from [:capacitor-cordova-android-plugins] C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:5-80
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:22-77
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\8876b0ef355d9d3e8b47dae2b38cca4c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\akars\.gradle\caches\transforms-3\31fc96d9881c54f9b47ddec530ec8052\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\akars\.gradle\caches\transforms-3\31fc96d9881c54f9b47ddec530ec8052\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\13d80db27eeb1b7f8279ad504eac1b76\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\13d80db27eeb1b7f8279ad504eac1b76\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\8876b0ef355d9d3e8b47dae2b38cca4c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:30:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\8876b0ef355d9d3e8b47dae2b38cca4c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\8876b0ef355d9d3e8b47dae2b38cca4c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\8876b0ef355d9d3e8b47dae2b38cca4c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\8876b0ef355d9d3e8b47dae2b38cca4c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\8876b0ef355d9d3e8b47dae2b38cca4c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\8876b0ef355d9d3e8b47dae2b38cca4c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\akars\.gradle\caches\transforms-3\31fc96d9881c54f9b47ddec530ec8052\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\akars\.gradle\caches\transforms-3\31fc96d9881c54f9b47ddec530ec8052\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\akars\.gradle\caches\transforms-3\31fc96d9881c54f9b47ddec530ec8052\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78

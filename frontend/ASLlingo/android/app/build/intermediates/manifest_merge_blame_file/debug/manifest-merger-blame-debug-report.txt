@@ -1,0 +1,113 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="io.ionic.starter"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="22"
+8-->C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:14:5-67
+11-->C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:14:22-64
+12    <uses-permission android:name="android.permission.VIBRATE" />
+12-->[:capacitor-haptics] C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\node_modules\@capacitor\haptics\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-66
+12-->[:capacitor-haptics] C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\node_modules\@capacitor\haptics\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-63
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->[:capacitor-cordova-android-plugins] C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-81
+13-->[:capacitor-cordova-android-plugins] C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-78
+14    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+14-->[:capacitor-cordova-android-plugins] C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-71
+14-->[:capacitor-cordova-android-plugins] C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-68
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+15-->[:capacitor-cordova-android-plugins] C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:5-80
+15-->[:capacitor-cordova-android-plugins] C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:22-77
+16
+17    <application
+17-->C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:3:5-13:19
+18        android:allowBackup="true"
+18-->C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:3:18-44
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.8.0] C:\Users\akars\.gradle\caches\transforms-3\fe0dba67bfac75aa58e7b93d33808165\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+20        android:debuggable="true"
+21        android:icon="@mipmap/ic_launcher"
+21-->C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:3:45-79
+22        android:label="@string/app_name"
+22-->C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:3:80-112
+23        android:roundIcon="@mipmap/ic_launcher_round"
+23-->C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:3:113-158
+24        android:supportsRtl="true"
+24-->C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:3:159-185
+25        android:theme="@style/AppTheme"
+25-->C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:3:186-217
+26        android:usesCleartextTraffic="true" >
+26-->C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:3:218-253
+27        <activity
+27-->C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:4:9-9:20
+28            android:name="io.ionic.starter.MainActivity"
+28-->C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:4:236-280
+29            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|smallestScreenSize|screenLayout|uiMode"
+29-->C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:4:19-135
+30            android:exported="true"
+30-->C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:4:136-159
+31            android:label="@string/title_activity_main"
+31-->C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:4:160-203
+32            android:launchMode="singleTask"
+32-->C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:4:204-235
+33            android:theme="@style/AppTheme.NoActionBarLaunch" >
+33-->C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:4:281-330
+34            <intent-filter>
+34-->C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:5:13-8:29
+35                <action android:name="android.intent.action.MAIN" />
+35-->C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:6:17-69
+35-->C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:6:25-66
+36
+37                <category android:name="android.intent.category.LAUNCHER" />
+37-->C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:7:17-77
+37-->C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:7:27-74
+38            </intent-filter>
+39        </activity>
+40
+41        <provider
+42            android:name="androidx.core.content.FileProvider"
+42-->C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:10:131-180
+43            android:authorities="io.ionic.starter.fileprovider"
+43-->C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:10:19-70
+44            android:exported="false"
+44-->C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:10:71-95
+45            android:grantUriPermissions="true" >
+45-->C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:10:96-130
+46            <meta-data
+46-->C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:11:13-112
+47                android:name="android.support.FILE_PROVIDER_PATHS"
+47-->C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:11:24-74
+48                android:resource="@xml/file_paths" />
+48-->C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\app\src\main\AndroidManifest.xml:11:75-109
+49        </provider>
+50        <provider
+50-->[androidx.emoji2:emoji2:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\8876b0ef355d9d3e8b47dae2b38cca4c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+51            android:name="androidx.startup.InitializationProvider"
+51-->[androidx.emoji2:emoji2:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\8876b0ef355d9d3e8b47dae2b38cca4c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+52            android:authorities="io.ionic.starter.androidx-startup"
+52-->[androidx.emoji2:emoji2:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\8876b0ef355d9d3e8b47dae2b38cca4c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+53            android:exported="false" >
+53-->[androidx.emoji2:emoji2:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\8876b0ef355d9d3e8b47dae2b38cca4c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+54            <meta-data
+54-->[androidx.emoji2:emoji2:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\8876b0ef355d9d3e8b47dae2b38cca4c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+55                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+55-->[androidx.emoji2:emoji2:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\8876b0ef355d9d3e8b47dae2b38cca4c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+56                android:value="androidx.startup" />
+56-->[androidx.emoji2:emoji2:1.0.0] C:\Users\akars\.gradle\caches\transforms-3\8876b0ef355d9d3e8b47dae2b38cca4c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+57            <meta-data
+57-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\akars\.gradle\caches\transforms-3\31fc96d9881c54f9b47ddec530ec8052\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+58                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+58-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\akars\.gradle\caches\transforms-3\31fc96d9881c54f9b47ddec530ec8052\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+59                android:value="androidx.startup" />
+59-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\akars\.gradle\caches\transforms-3\31fc96d9881c54f9b47ddec530ec8052\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+60        </provider>
+61    </application>
+62
+63</manifest>

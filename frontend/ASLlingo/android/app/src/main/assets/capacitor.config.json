@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "ASLlingo",
+	"webDir": "dist",
+	"bundledWebRuntime": false
+}

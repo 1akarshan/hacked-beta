@@ -1,0 +1,26 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:amazon="http://schemas.amazon.com/apk/res/android"
+3    xmlns:android="http://schemas.android.com/apk/res/android"
+4    package="capacitor.android.plugins" >
+5
+6    <uses-sdk
+7        android:minSdkVersion="22"
+7-->C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml
+8        android:targetSdkVersion="32" />
+8-->C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml
+9
+10    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+10-->C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:8:1-76
+10-->C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:8:18-74
+11    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+11-->C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:9:1-66
+11-->C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:9:18-64
+12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+12-->C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:10:1-75
+12-->C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:10:18-73
+13
+14    <application>
+14-->C:\Users\akars\OneDrive\Documents\GitHub\hacked-beta\frontend\ASLlingo\android\capacitor-cordova-android-plugins\src\main\AndroidManifest.xml:5:1-7:15
+15    </application>
+16
+17</manifest>

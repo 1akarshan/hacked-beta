@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "io.ionic.starter.app-mergeDebugResources-18:/values-v29/values-v29.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\akars\\.gradle\\caches\\transforms-3\\86f2c94e123f7d631ee33b23bd175149\\transformed\\jetified-core-splashscreen-1.0.0-rc01\\res\\values-v29\\values-v29.xml",
+                    "from": {
+                        "startLines": "2,7",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,374",
+                        "endLines": "6,8",
+                        "endColumns": "12,12",
+                        "endOffsets": "369,464"
+                    }
+                }
+            ]
+        }
+    ]
+}

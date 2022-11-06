@@ -1,0 +1,158 @@
+[
+    {
+        "merged": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-merged_res-20:\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-main-22:\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-merged_res-20:\\drawable-port-xhdpi_splash.png.flat",
+        "source": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-main-22:\\drawable-port-xhdpi\\splash.png"
+    },
+    {
+        "merged": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-merged_res-20:\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-main-22:\\mipmap-mdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "io.ionic.starter.app-merged_res-20:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "io.ionic.starter.app-pngs-15:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-merged_res-20:\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-main-22:\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-merged_res-20:\\mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-main-22:\\mipmap-hdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-merged_res-20:\\drawable-port-xxxhdpi_splash.png.flat",
+        "source": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-main-22:\\drawable-port-xxxhdpi\\splash.png"
+    },
+    {
+        "merged": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-merged_res-20:\\drawable_splash.png.flat",
+        "source": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-main-22:\\drawable\\splash.png"
+    },
+    {
+        "merged": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-merged_res-20:\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-main-22:\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-merged_res-20:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-main-22:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-merged_res-20:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-main-22:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-merged_res-20:\\drawable-port-xxhdpi_splash.png.flat",
+        "source": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-main-22:\\drawable-port-xxhdpi\\splash.png"
+    },
+    {
+        "merged": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-merged_res-20:\\drawable-land-hdpi_splash.png.flat",
+        "source": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-main-22:\\drawable-land-hdpi\\splash.png"
+    },
+    {
+        "merged": "io.ionic.starter.app-merged_res-20:/xml_file_paths.xml.flat",
+        "source": "io.ionic.starter.app-main-22:/xml/file_paths.xml"
+    },
+    {
+        "merged": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-merged_res-20:\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-main-22:\\mipmap-xhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-merged_res-20:\\drawable-land-mdpi_splash.png.flat",
+        "source": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-main-22:\\drawable-land-mdpi\\splash.png"
+    },
+    {
+        "merged": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-merged_res-20:\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-main-22:\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-merged_res-20:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-main-22:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-merged_res-20:\\xml_config.xml.flat",
+        "source": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-main-22:\\xml\\config.xml"
+    },
+    {
+        "merged": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-merged_res-20:\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-main-22:\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-merged_res-20:\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-main-22:\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-merged_res-20:\\drawable-port-mdpi_splash.png.flat",
+        "source": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-main-22:\\drawable-port-mdpi\\splash.png"
+    },
+    {
+        "merged": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-merged_res-20:\\drawable-port-hdpi_splash.png.flat",
+        "source": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-main-22:\\drawable-port-hdpi\\splash.png"
+    },
+    {
+        "merged": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-merged_res-20:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-main-22:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-merged_res-20:\\drawable-land-xhdpi_splash.png.flat",
+        "source": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-main-22:\\drawable-land-xhdpi\\splash.png"
+    },
+    {
+        "merged": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-merged_res-20:\\xml_file_paths.xml.flat",
+        "source": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-main-22:\\xml\\file_paths.xml"
+    },
+    {
+        "merged": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-merged_res-20:\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-main-22:\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "io.ionic.starter.app-merged_res-20:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "io.ionic.starter.app-main-22:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-merged_res-20:\\drawable-land-xxhdpi_splash.png.flat",
+        "source": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-main-22:\\drawable-land-xxhdpi\\splash.png"
+    },
+    {
+        "merged": "io.ionic.starter.app-merged_res-20:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "io.ionic.starter.app-main-22:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "io.ionic.starter.app-merged_res-20:/layout_activity_main.xml.flat",
+        "source": "io.ionic.starter.app-main-22:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-merged_res-20:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-main-22:\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-merged_res-20:\\drawable-land-xxxhdpi_splash.png.flat",
+        "source": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-main-22:\\drawable-land-xxxhdpi\\splash.png"
+    },
+    {
+        "merged": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-merged_res-20:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-main-22:\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-merged_res-20:\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-main-22:\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-merged_res-20:\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-main-22:\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-merged_res-20:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-pngs-15:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-merged_res-20:\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\akars\\.gradle\\daemon\\7.4.2\\io.ionic.starter.app-main-22:\\mipmap-xxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "io.ionic.starter.app-merged_res-20:/drawable_ic_launcher_background.xml.flat",
+        "source": "io.ionic.starter.app-main-22:/drawable/ic_launcher_background.xml"
+    }
+]
