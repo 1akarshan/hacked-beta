@@ -2,7 +2,7 @@
   <ion-page>
     <ion-content :fullscreen="true">
       <div class="box" id="container">
-        <p style="line-height: 0px;color:white;margin: 0;margin-left:2rem; margin-top:3rem; font-size:5rem;">Quiz!</p>
+        <p style="line-height: 0px;color:white;margin: 0;margin-left:2rem; margin-top:3rem; font-size:5rem;">ASLingo!</p>
         <p style="line-height: 0px;color:white;margin: 0;margin-left:3rem; margin-top:4.5rem; font-size:1.5rem;">Master the ASL!</p>
         <p style="line-height: 0px;color:white;margin: 0;margin-left:3rem; margin-top:2rem; font-size:1rem;">Answer the questions below.
           <span style="font-size:2rem">🧐</span></p>
@@ -80,10 +80,10 @@
             difficulty: 'Easy', 
             question: 'This classifier might be used to describe a stick or pencil, or to draw a circle in the air', 
             color: 'success',
-            answer: {title: 'CL-1', link:"https://www.lifeprint.com/asl101/images-layout/cl-l.gif"}, 
+            answer: {title: 'CL-1', link:"https://www.lifeprint.com/asl101/images-layout/cl-1.gif"}, 
             optionset1: [
               {title: 'Option 1', link:"https://www.lifeprint.com/asl101/images-layout/cl-ily.gif"},
-              {title: 'Option 2', link:"https://www.lifeprint.com/asl101/images-layout/cl-l.gif"}],
+              {title: 'Option 2', link:"https://www.lifeprint.com/asl101/images-layout/cl-1.gif"}],
               optionset2: [
                 {title: 'Option 3', link: "https://www.lifeprint.com/asl101/images-layout/cl-o.gif"},
                 {title: 'Option 4', link:"https://www.lifeprint.com/asl101/images-layout/cl-r.gif"}

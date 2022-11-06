@@ -188,7 +188,7 @@
       data() {
         return {
           ansColor: 'danger',
-          ansText: 'Incorrect',
+          ansText: 'Incorrect Answer!',
           answerList: [
             {
               id: 1,
@@ -262,7 +262,7 @@
         try {
             
           const options = {
-            duration: 10,
+            duration: 4,
             limit: 1,
             quality: 1
           };
@@ -303,7 +303,7 @@
                   // search in json stringy for answer title
                   if (JSON.stringify(response.data).includes(that.answer.title)) {
                     that.ansColor = 'success';
-                    that.ansText = 'Correct';
+                    that.ansText = 'Correct Answer!';
                   }
                 }
           });
