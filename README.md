@@ -27,4 +27,7 @@ As for our accomplishments, we have learned how to build and train a model, do i
 ![IMG_6577](https://user-images.githubusercontent.com/90705245/200184970-4cd9e2a7-fb76-4693-a648-220246fc9d27.jpg)
 ![IMG_6578](https://user-images.githubusercontent.com/90705245/200184984-ef726b7a-c5e2-4488-ba06-9d5a2152aba4.jpg)
 
+# Backend Server After a user uploads a video
+![68948376118__96F82817-03A4-4836-9CEB-7827B31FB705](https://user-images.githubusercontent.com/93630550/200372087-adc7927b-edfa-4489-8ea3-2ab8a14cc235.jpg)
+
 Note: go to branch "backend" for the most recent code
