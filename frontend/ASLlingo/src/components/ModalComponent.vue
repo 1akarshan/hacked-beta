@@ -288,7 +288,7 @@
             
           axios({
             method: "post",
-            url: "https://df85-2620-101-c040-85c-872-da75-28a3-1291.ngrok.io/upload/",
+            url: "https://8682-2604-3d09-6883-5e00-8d35-20f3-2217-7ccc.ngrok.io/upload/",
             data: JSON.stringify({
               _data: trimmed
             }),
