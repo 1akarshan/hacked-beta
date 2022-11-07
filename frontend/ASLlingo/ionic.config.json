@@ -1,7 +1,0 @@
-{
-  "name": "ASLlingo",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "vue"
-}
