@@ -73,7 +73,7 @@
                   <ion-list :inset="true">
                   <ion-item>
                     <ion-label>
-                      <ion-text :color="ansColor"><h2>{{ansText}}</h2></ion-text>
+                      <ion-text :color="ansColor"><h2 style="font-size:1.5rem">{{ansText}}</h2></ion-text>
                     </ion-label>
                   </ion-item>
 
@@ -81,7 +81,7 @@
                     <ion-label>
                       <ion-text color="success"><h2>Correct Answer</h2></ion-text>
                       <p>{{answer.title}}</p>
-                      <img :src=answer.link height="50px" width="50px" alt="Tasd">
+                      <img :src="answer.link" alt="Tasd">
                     </ion-label>
                   </ion-item>
 
