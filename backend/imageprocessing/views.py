@@ -53,7 +53,7 @@ class VideoCaptureHandler(APIView):
 
     def post(self, request, format=None):
         print(request)
-        VideoCapture.objects.all().delete()
+        # VideoCapture.objects.all().delete()
         # serializer = UploadSerializer()
         # if serializer.is_valid():
         #     serializer.save()
