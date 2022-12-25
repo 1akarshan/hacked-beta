@@ -39,40 +39,11 @@ PHOTO_DIR_NAME = "test"
 # from model import KeyPointClassifier
 # from model import PointHistoryClassifier
 
-
-# def get_args():
-#     parser = argparse.ArgumentParser()
-
-#     parser.add_argument("--device", type=int, default=0)
-#     parser.add_argument("--width", help='cap width', type=int, default=960)
-#     parser.add_argument("--height", help='cap height', type=int, default=540)
-
-#     parser.add_argument('--use_static_image_mode', action='store_true')
-#     parser.add_argument("--min_detection_confidence",
-#                         help='min_detection_confidence',
-#                         type=float,
-#                         default=0.7)
-#     parser.add_argument("--min_tracking_confidence",
-#                         help='min_tracking_confidence',
-#                         type=int,
-#                         default=0.5)
-
-#     # args = parser.parse_args()
-
-#     return parser
-
-
 def classifyVideo():
     global VIDEO_DIR, SIGNS_SEEN, SIGN_IDS, ANSWER
     SIGNS_SEEN = []
 
-    # Delete contents of folder "test" ################################################
-    # test_dir = "./{}".format(PHOTO_DIR_NAME)
-    # for f in os.listdir(test_dir):
-    # os.remove(os.path.join(test_dir, f))
-
     # Argument parsing #################################################################
-
     cap_device = 0
     cap_width = 960
     cap_height =  540
@@ -253,19 +224,6 @@ def classifyVideo():
             max(SIGNS_SEEN, key=SIGNS_SEEN.count)]["File"])
         dict_max[max(SIGNS_SEEN, key=SIGNS_SEEN.count)]["Sign ID"] = SIGN_IDS[max(SIGNS_SEEN, key=SIGNS_SEEN.count)]
         return dict_max[max(SIGNS_SEEN, key=SIGNS_SEEN.count)]
-
-
-
-    # if isinstance(max_sights_seen, list):
-    #     max_sights_seen = max_sights_seen[0]
-        
-
-
-    # dict_max[max_sights_seen]["File"] = os.path.join(test_dir, dict_max[
-    #     max_sights_seen]["File"])
-    # dict_max[max_sights_seen]["Sign ID"] = SIGN_IDS[max_sights_seen]
-    # return dict_max[max_sights_seen]
-
 
 def select_mode(key, mode):
     number = -1
